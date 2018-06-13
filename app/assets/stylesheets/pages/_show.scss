@@ -1,0 +1,44 @@
+.image-width {
+  width: 100vw;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.flex-date{
+  display: flex;
+  border: 1px solid grey;
+  width: 80%;
+}
+
+.booking {
+  justify-content: center;
+  align-items: center;
+}
+
+.mar-top {
+  margin-top: 15px;
+}
+
+.share {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.share-icons {
+  display: block;
+}

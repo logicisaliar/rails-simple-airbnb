@@ -1,8 +1,19 @@
 class FlatsController < ApplicationController
 
-def index
-  @flats = Flat.all
-  @flat_count = Flat.count
-end
+  before_action :set_flat, only: [:show, :edit, :update, :destroy]
 
+  def index
+    @flats = Flat.all
+    @flat_count = Flat.count
+  end
+
+  def show
+  end
+
+
+  private
+
+  def set_flat
+    @flat = Flat.find(params[:id])
+  end
 end

@@ -1,18 +1,15 @@
-<div class="nav-bar">
-  <h3>Simple Airbnb</h3>
-  <%= link_to "Add Flat", flats_path %>
-</div>
 <div class="container">
   <h1>All our flats (<%= @flat_count %>)</h1>
   <div class="row">
     <div class="card">
+      <img src="https://picsum.photos/350/180" alt="">
       <div class="card-main">
         <% @flats.each do |flat| %>
         <h2><%= flat.name %></h2>
         <p><%= flat.address %></p>
-        <i></i>
+        <i class="fas fa-adjust"></i>
         <p><%= flat.number_of_guests %></p>
-        <i></i>
+        <i class="fas fa-adjust"></i>
         <p><%= flat.price_per_night %></p>
       </div>
       <%= link_to "More info",flat_path(flat)  %>
